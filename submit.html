@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Discord Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Submit Your Discord Server</h2>
+    <form id="serverForm">
+        <label for="serverName">Server Name:</label>
+        <input type="text" id="serverName" required>
+        
+        <label for="serverDescription">Description:</label>
+        <textarea id="serverDescription" required></textarea>
+        
+        <label for="serverLink">Invite Link (e.g., discord.gg/example):</label>
+        <input type="text" id="serverLink" pattern="discord\.gg/\S+|discord\.com/invite/\S+" required>
+        
+        <label for="serverImage">Upload Image:</label>
+        <input type="file" id="serverImage" accept="image/*" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
